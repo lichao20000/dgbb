@@ -1,0 +1,207 @@
+/* 橙色字体 */
+a.orange:link {
+	color: #FF5500;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a.orange:visited {
+	color: #FF5500;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a.orange:hover {
+	color: #FF5500;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+/* 更多字体 */
+a.more:link {
+	color: #999999;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a.more:visited {
+	color: #999999;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a.more:hover {
+	color: #999999;
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+/* 黑色字体 */
+a.black:link {
+	font-size: 12px;
+	color: #000;
+	line-height: 25px;
+	text-decoration: none
+}
+
+a.black:visited {
+	font-size: 12px;
+	color: #000;
+	line-height: 25px;
+	text-decoration: none
+}
+
+a.black:hover {
+	font-size: 12px;
+	color: #f00;
+	line-height: 25px;
+	text-decoration: underline
+}
+
+/* 红色字体 */
+a.red:link {
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none
+}
+
+a.red:visited {
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none
+}
+
+a.red:hover {
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: underline
+}
+
+/* 红色字体 */
+a.red12:link {
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: underline
+}
+
+a.red12:visited {
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: none
+}
+
+a.red12:hover {
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: underline
+}
+
+/* 蓝色字体 */
+a.blue:link {
+	font-size: 12px;
+	color: #0000ff;
+	text-decoration: underline
+}
+
+a.blue:visited {
+	font-size: 12px;
+	color: #0000ff;
+	text-decoration: underline
+}
+
+a.blue:hover {
+	font-size: 12px;
+	color: #ff0000;
+	text-decoration: underline
+}
+
+/* 一般字体样式 */
+.font12 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000;
+}
+
+.font12_bold {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #43667C;
+}
+
+.font14{
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+.font14x{
+	font-family: "宋体";
+	font-size: 14px;
+	color: #333;
+}
+.red12 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #D71820;
+}
+
+.hui {
+	font-family: "宋体";
+	color: #999;
+}
+
+.biaoti {
+	color: #CC0000;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.biaoti a:link {
+	color: #CC0000;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.biaoti a:active {
+	color: #CC0000;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.biaoti a:hover {
+	color: #CC0000;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+/* TOP顶部项目名称字体样式 */
+.item_name {
+	margin-left: 20px;
+	font-family: "黑体";
+	font-size: 30px;
+	line-height: 80px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*签约授权书打印标题   */
+.print_title{
+	line-height:70px;
+	font-size:32px;
+	color:red;
+	font-weight:bold;
+	text-align:center;
+}

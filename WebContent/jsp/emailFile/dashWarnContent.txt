@@ -1,0 +1,9 @@
+主人，你有一个指标不对劲哦！
+	指标：<!--kpi_name--> 
+	期间：<!--month_desc-->
+	产品：<!--product_name-->
+	客户：<!--client_name-->
+	专业：<!--sp_name--> 
+	当前值为：<!--amount_curr-->
+	预警值为：<!--warn_value-->
+	赶紧关注一下哦！

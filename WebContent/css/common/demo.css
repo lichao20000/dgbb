@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+.tanchu{width:388px; margin:0px auto; margin-top:5%;}
+.tanchudiv_alpha{ width:388px; height:257px;*height:277px; background:#d3d3d3; filter:alpha(opacity=30);opacity:0.3;position: absolute; }
+.tanchudiv{border: 1px solid #bbbbbb;width: 374px;height: 243px;*height: 263px;background: url(../../resources/images/common/tanchu_top_t.jpg) repeat-x;
+	font-size: 12px;position:relative;left: 6px;top: 6px;}
+.tanchudiv span{ color:#3f3f3f; font-family:"微软雅黑"; font-size:14px; background:url(../../resources/images/common/tanchu_top_pic.png) 10px 10px no-repeat; padding-left:37px; line-height:35px; font-weight:bold;text-shadow:1px 1px 1px #ffffff; float:left;}
+.tanchudiv i{ background:url(../../resources/images/common/delete01.png) no-repeat; width:23px; height:13px; float:right; margin-top:11px; cursor:pointer;}
+.tanchudiv_nr{ clear:both; padding:20px; background:#FFF;}
+.tanchudiv_tit{ color:#d7191f; font-size:14px; font-weight:bold;}
+.tanchudiv_wz{ color:#3f3f3f; height:95px; margin-top:30px;}
+.tanchudiv_inp{width:82px;margin:0 auto;}
+.tanchu_inputcla{ background:url(../../resources/images/common/butten01.png) no-repeat; border:0px; width:82px; height:26px; cursor:pointer; }
+/* Checkbox style */
+.firerift-style {		
+	display: block;
+	width: 68px;
+	height: 28px;
+	background:url(../../resources/images/common/check-circle.png) no-repeat;
+	cursor: pointer;
+	margin:0 auto;
+}
+	
+.on {
+	background-position: 0% 100%;
+}
+	
+.off {
+	background-position: 100% 0%;
+}	
+.hidden {
+	display: none;
+}
+
+/*选择相册下拉框*/
+.xl-select-box{ float:left; position:relative; width:228px; height:17px; border:#bbbbbb solid 1px; padding:5px 5px 6px 5px;font-size:12px;}
+.xl-select-box .s-val{ width:202px; height:17px; line-height:17px; overflow:hidden; float:left; color:#bbbbbb; }
+.xl-select-box .s-key{ float:right; overflow:hidden; font-size:0; line-height:0; width:7px; height:10px; background:url(../../resources/images/common/xl_03.jpg) no-repeat; cursor:pointer; margin-top:5px; margin-right:5px;}
+.xl-select-box .s-box{ width:238px; border:#bbbbbb solid 1px; position:absolute; background:#FFF; left:-1px; top:29px;}
+.xl-select-box .s-box li a{ display:block; padding:5px 20px; color:#232323; text-decoration:none; background:url(../../resources/images/common/a1_02.jpg) 8px 11px no-repeat;}
+.xl-select-box .s-box li a:hover{ background:#53bcff; color: #d7191f;background:url(../../resources/images/common/a1_02.jpg) 8px 11px no-repeat;}
+
+.info_Rtabs{ height:auto; overflow:hidden; margin-top:10px;}
+.info_Rtabs ul{ height:32px; border-bottom:1px solid #9c1215; list-style:none;}
+.info_Rtabs ul li{ width:152px; height:32px; line-height:32px; font-size:14px; font-weight:bolder; text-align:center; background:url(../../resources/images/common/tab_2.png) no-repeat; float:left; cursor:pointer; position:relative;}
+.info_Rdel{ width:16px; height:16px; position:absolute; top:2px; right:2px;}
+#info_RmenuNow{ background:url(../../resources/images/common/tab_1.png) no-repeat; color:#fff;}
+#info_Rtabs-1{ height:auto; border-left:1px solid #9c1215; border-right:1px solid #9c1215; border-bottom:1px solid #9c1215; display:none; background:#fff;}
+#info_Rtabs-2{ height:auto; border-left:1px solid #9c1215; border-right:1px solid #9c1215; border-bottom:1px solid #9c1215; display:none; background:#fff;}
+
+  

@@ -1,0 +1,11 @@
+select * from
+(select distinct fm.req_type,fm.prcs_inst_id,fm.pk_id pk_id,ww.workitemid,ww.activityinstid,fm.form_seq form_seq,to_char(fm.send_time, 'yyyy-mm-dd hh24:mi:ss') send_time,fm.form_title form_title,fp.assessment_score assessment_score,p.user_name user_name,ww.partiname partiname,p.dept_name dept_name,case when fp.assessment_score is NULL then null else to_char(fp.last_updated_date, 'yyyy-mm-dd hh24:mi:ss')end assessment_time,ev.enum_value_meaning enum_value_meaning,row_number()OVER(PARTITION BY fm.form_seq order by ww.workitemid desc) row_id
+      from T_FORM_MAIN        fm,T_FORM_PRESALES    fp,info_person        p,T_APP_ENUM_VALUE   ev,wfwiparticipant ww
+      where ww.workitemname like '%技术方案制定'and ww.participantname = ww.partiname and ww.partiintype = 'EXE' and ww.processinstid = fm.prcs_inst_id and fp.parent_form_id = fm.pk_id and fp.form_no = fm.form_seq and fm.send_user_id = p.user_id and fp.assessment_result = ev.enum_value(+) and ev.enum_item_code(+) = 'assessmentResult' and 1 = 1
+union
+ select distinct fm.req_type,fm.prcs_inst_id,fm.pk_id pk_id,ww.workitemid,ww.activityinstid,fm.form_seq form_seq,to_char(fm.send_time, 'yyyy-mm-dd hh24:mi:ss') send_time,fm.form_title form_title,fp.assessment_score assessment_score,p.user_name user_name,ww.partiname partiname,p.dept_name dept_name,case when fp.assessment_score is NULL then null else to_char(fp.last_updated_date, 'yyyy-mm-dd hh24:mi:ss')end assessment_time,ev.enum_value_meaning enum_value_meaning,row_number()OVER(PARTITION BY fm.form_seq order by ww.workitemid desc) row_id
+      from T_FORM_MAIN        fm,T_FORM_PRESALES    fp,info_person        p,T_APP_ENUM_VALUE   ev,wf_h_wiparticipant ww
+      where ww.workitemname like '%技术方案制定'and ww.participantname = ww.partiname and ww.partiintype = 'EXE' and ww.processinstid = fm.prcs_inst_id and fp.parent_form_id = fm.pk_id and fp.form_no = fm.form_seq and fm.send_user_id = p.user_id and fp.assessment_result = ev.enum_value(+) and ev.enum_item_code(+) = 'assessmentResult' and 1 = 1
+
+ ) t where t.row_id=1 order by t.form_seq desc
+  

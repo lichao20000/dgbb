@@ -1,0 +1,31 @@
+html body .sui-grid-row-selected {
+	background: #FFF5CC;
+}
+html body .sui-grid .sui-grid-cell-selected {
+	background: #addffe;
+}
+body .sui-grid-row-hover {
+	background: #E1EFF8;
+}
+.sui-grid-headerCell-inner{
+    font-size:9pt;
+    font-family: "Microsoft YaHei" ! important;
+    font-weight : bold;
+    line-height:25px;    
+    padding:0px;
+    padding-top:2px;
+    padding-bottom:2px;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    white-space:normal;
+}
+h1{
+	font-size:14pt;
+	font-family: "Microsoft YaHei" ! important;
+	font-weight : bold;
+	}
+.condition{
+	margin-left 	: 10px;
+	margin-bottom	:3px;	
+}

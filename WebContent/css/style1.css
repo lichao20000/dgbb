@@ -1,0 +1,962 @@
+@charset "utf-8";
+body{
+	margin:0 auto;
+	padding:0;
+	font-size:12px;
+	background:#fff;
+}
+td{
+ word-break:break-all;
+}
+ul{margin:0px; padding:0px}
+li {list-style-type: none;line-height: 25px;text-align: left;list-style: none;}
+img{border:0}
+form{margin:0; padding:0}
+.btn{BORDER: #2C59AA 1px solid;   FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);  CURSOR: hand; COLOR: black;  padding:1px 10px;*padding:0 5px; _padding:0 5px;line-height:20px; height:20px; }
+input{font-size:12px;}
+/*文本输入框无效成灰色  */
+.input_disable{border:1px solid #dedede;background:#f1f1f1;color:#999}
+/*文本输入框背景透明  */
+.input_no{border:0px solid #fff;background:transparent; color:#333;}
+/*文本输入框日期  */
+.input_date{
+	background-image:url(../images/datePicker.gif);
+	background-repeat:no-repeat;
+	background-position: right;
+	border:1px solid #7F9DB9;
+}
+/*文本输入框查询  */
+.input_search{
+	border:1px solid #7F9DB9;
+	background:#fff;
+	height:20px;
+	line-height:19px;
+	float:left;
+	margin-top:0;
+	*margin-top:3px !important;
+	_margin-top:2px;
+}
+/*文本输入框查询  左侧输入框样式  */
+.search_input{border:0px solid #ffffff;padding-top:3px; background:none; float:left; overflow:hidden;}
+/*文本输入框查询  右侧搜索按钮样式  */
+.input_pic{text-align:right; padding:0 -5px; float:right}
+#container {margin:0 auto; width:100%;}
+#mainContent {width:100%; background:url(bg.gif) 0 0 repeat-y;  overflow:auto;zoom:1;}
+/*左侧  */
+#sidebar {  float:left; width: 20%; border-right:1px solid #ccc; border-bottom:1px solid #ccc}
+/*显示隐藏图标*/
+#switchSysBar{float:left;*margin-right:7px;_margin-right:0; width:3px; margin-top:22%; }
+/*右侧  */
+#content {width:auto;*height:auto;height:100px;}
+/*合同知识左侧  */
+#content_left{float:left; width:49.5%;}
+/*合同知识右侧  */
+#content_right{float:right; width:49.5%; margin-right:3px;}
+/*右侧边框样式  */
+.content_border{margin-bottom:5px;border-left:1px solid #C7C7C7;border-right:1px solid #C7C7C7;border-bottom:1px solid #C7C7C7;}
+/*右侧iframe边距     */
+.iframe{margin:0 5px;}
+/*起草、审签、显示宽度 */
+.list_width{width:90%; margin:0 auto 40px auto;}
+/*履行 显示宽度 */
+.list_width2{width:90%; margin:0 auto 5px auto;}
+/*标题、功能按钮固定位置 样式 */
+.position_place{position:fixed;_position:static; background:#fff; top:0; width:90%; _width:100%; margin:0 auto;}
+/*弹出页面固定位置下方样式   */
+.position_bottom{margin-top:80px;_margin-top:0; position:static;}
+/*弹出页面固定位置下方 无按钮时样式   */
+.position_bottom2{margin-top:10px;_margin-top:10px; position:static;}
+/*起草、审签、履行 显示项部标题 */
+.list_title_bg{
+	background: url(../images/title_bg.GIF) repeat-x;
+	height:31px;
+	line-height:31px;
+}
+/*起草、审签、履行 显示项部标题内容 */
+.list_title_left{
+	padding-left:30px;
+	padding-right:5px;
+	height:31px;
+	line-height:31px;
+	background:url(../images/title_left_bg.GIF) repeat-x;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	float:left;
+	text-align:center;
+}
+/*起草、审签、履行 显示项部标题右侧说明 */
+.list_title_right{
+	background: url(../images/title_right_bg.GIF) no-repeat;
+	width:42px;
+	height:30px;
+	float:left;
+}
+/*起草、审签、履行 显示项部标题右侧处理人环节 */
+.list_right{
+	float:right;
+	padding-right:10px;
+	color:#D71820;
+	font:12px;
+}
+/*定义按钮图标 */
+.btn_div{margin:5px 0; height:32px; clear:both; background:#fff;}
+/*显示块字段标题 */
+.block_title_bg{width:100%; clear:both; background:#DDE0E2; height:25px; line-height:25px; color:#D71820;margin-bottom:5px;}
+.block_title_bg2{width:100%; clear:both; background:#DDE0E2; height:25px; line-height:25px; color:#D71820; margin-bottom:5px;}
+/*显示块字段标题内容 */
+.block_title_left{ 
+	background:url(../images/block_title_left_bg.gif) repeat-x;
+	padding-left:10px;
+	padding-right:2px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	float:left;
+	text-align:center;
+}
+/*显示块字段标题右侧背景 */
+.block_title_right{
+	width:26px;
+	height:25px;
+	float:left;
+	background-image: url(../images/block_title_bg.gif);
+	background-repeat: no-repeat;
+}
+/*标题旁边说明内容  */
+.block_title_explain{height:25px; line-height:25px; float:left; padding-left:10px}
+/*标题右侧流水号或展示隐藏样式   */
+.block_right{
+	float:right;
+	padding-right:10px;
+	color:#333;
+	font:12px;}
+/*空白换行 */
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
+/* 首页标题  */
+.title{
+       height:24px;
+	   line-height:24px;
+       background-color:#C7C7C7;
+	   border-top:2px solid #CC151D;
+	   padding-left:5px;
+}
+/* 知识管理标题  */
+.title2{
+	height:30px;
+	line-height:30px;
+	background-color:#E9F0FA;
+	padding-left:5px;
+	background-image: url(../images/knowledge_bg.gif);
+	background-repeat: repeat;
+}
+/*字段标题   */
+.field{padding:10px 5px; font-weight:bold}
+.field2{padding:10px 0; font-weight:bold}
+/*字段下面UL左边距 */
+.field_ul{margin-left:10px;}
+/*定义P换行 */
+p{
+	font-size:14px;
+	line-height:30px;
+}
+/*弹出窗体大小边距 */
+.Popup{width:95%; margin:2px 10px;}
+.Popup2{ margin:2px 10px; background:url(../images/popup_bg.jpg) repeat-x;}
+.Popup3{width:420px; margin:10% auto 0 auto; border:1px solid #ccc; padding:10px; background:url(../images/popup_bg.jpg) repeat-x;}
+dl,dt,dd,ul,ol,li,p,div,input,h1,h2,h3,h4,h5,h6 { margin:0; padding:0;} 
+/*LI无圆点列表 */
+li { list-style:none;}
+/*h1字体  用于弹出页面标题 */
+h1 {font-family:"黑体"; color:#000; font-size:30px; text-align:center; line-height:40px; height:40px;; margin-bottom:10px}
+/*h2字体  用于弹出页面标题 */
+h2 { font-family:"黑体"; font-size:24px; color:#D71820; text-align:center; line-height:32px;}
+h3 { font-size:16px; color:#333;}
+/*h5字体  暂时没用到，可删除 */
+h5 { font-size:12px; text-align:center; font-weight:normal; color:#666; line-height:28px;}
+/*当前位置 */
+.book{
+	background-image: url(../images/book_bg.gif);
+	border-top:1px solid #ccc;
+	background-repeat: repeat-x;
+	height: 30px;
+	line-height:30px;
+	padding-left:5px;
+	font-size:12px;
+}
+/*空格*/
+.sblank{font-size: 1px;height: 4px; background-color:#E2E2E2;margin: 0 auto;width: 100%;}
+/*左侧树型菜单样式   */
+div.sdmenu {
+	width: 100%;
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	text-align:left;
+}
+div.sdmenu div {
+	overflow: hidden;
+	background-image: url(../images/menu_bg_hover.gif);
+	background-position:right top;
+}
+* html div.sdmenu div{
+    float:left;
+	text-align:left;
+}
+div.sdmenu div.collapsed {
+	height: 34px;
+}
+div.sdmenu div span {
+	display: block;line-height:34px;width:100%;font-weight: bold;color: #D71820;cursor: pointer; margin-left:5px;*margin-left:5px;_margin:0;
+}
+div.sdmenu div span a{
+    padding:0; background:none; border:0; font-size:12px;line-height:34px;display:block; text-decoration:none; color:#000;
+}
+div.sdmenu div.collapsed {
+	background: url(../images/menu_bg.gif) ;background-position:right top; width:100%; color:#333;
+}
+div.sdmenu div.collapsed span{
+    color:#000; line-height:34px;
+}
+div.sdmenu div.collapsed span a.current{
+    color:#000;
+}
+div.sdmenu div a {
+	padding-left:30px;display: block;border-top: 1px solid #DBDBDB;color: #333;font-size:12px; background:url(../images/menu_sub_icon.gif) no-repeat 15px 8px #F3F3F3; line-height:30px;text-decoration: none;font-weight:100; 
+}
+div.sdmenu div a.current {
+	background : url(../images/linkarrow.gif) no-repeat  15px 8px #F3F3F3;  color:#D71820;text-decoration: none; font-weight:100;
+}
+div.sdmenu div span a.current {
+	background :none; color:#333;font-weight:100;
+}
+div.sdmenu div a:hover {
+	background : url(../images/menu_sub_icon.gif) no-repeat  15px 8px #F3F3F3;text-decoration: none;font-weight:100; color:#D71820;
+}
+div.sdmenu div span a:hover {
+	background:none; color:#D71820;
+}
+/*隐藏样式   */
+.side{WIDTH: 13px; border-left:1px solid #D71820; background:url(../images/side_bg.gif) repeat-y;}
+/*合同知识管理边框   */
+.content_box{
+	background-image: url(../images/content_box_top.gif);
+	background-repeat: repeat-x;
+	border:1px solid #CECECE;
+	margin-bottom:5px;
+	padding-bottom:5px;
+}
+/*起草、审签、履行的边框样式   */
+.examine_box{
+    border:1px solid #C7CBCE;
+	margin-bottom:5px;
+	padding:5px 0;
+	margin-top:5px;
+}
+/* 表格样式  */
+.index_table{
+		width: 100%;
+		line-height:22px;
+		margin:5px;
+}
+/* 表格样式  鼠标经过改变背景色  */
+.table{
+		width: 100%;
+		line-height:26px;
+		font-size:12px;
+		color:#000;
+
+}
+.table tr.odd{
+		background: #fff;
+	}
+.table tr.even{
+		background: #E9F5FC;
+}
+.table tr:hover,
+.table tr.hover{
+		background: #E9F5FC;
+}
+
+/* 表格单元格样式  有灰色边框  */
+.datagrid_div{
+	width: 99%;
+	border: 1px solid #999;
+}
+
+.datagrid{
+		border-collapse: collapse;
+		color:000;
+}
+/* 表格单元格  第一行标题样式  */
+.datagrid th{
+		text-align: center;
+		background-color: #E9F0FA;
+		border: 1px #cccccc solid;
+		text-align:center;
+}
+.datagrid td{
+		padding-left:5px;
+		padding-right:5px;		
+		border-collapse: collapse;
+		border:none;
+		border: 1px solid #ccc;
+		color:#000;
+	}
+	
+/* 表格单元格样式  有灰色边框  */
+.datagrid2_div{
+	width: 99%;
+	border: 1px solid #999;	
+	line-height:30px;
+}
+
+.datagrid2{
+		border-collapse: collapse;
+		color:#000;
+}
+.datagrid2 th{
+		text-align: center;
+		background-color: #E9F0FA;
+		border: 1px #cccccc solid;
+		text-align:right;
+		font-weight:normal;
+		line-height:30px;
+}
+.datagrid2 td{
+		border: none;
+		border:1px #cccccc solid;
+		padding-left:5px;
+		color:#000;
+	}
+/*合同起草栏目向上缩放  */
+.margintop{margin-top:0;}
+/*表头背景样式  */
+.table_title{
+        background-color:#E9F0FA;
+		background-repeat:repeat-x;
+		line-height:25px;
+}
+/*审批意见  表格背景  */
+.idea{background-color:#E4E4E4; height:30px; line-height:30px;}
+.table1{
+		width: 100%;
+		line-height:30px;
+		padding-left:10px;
+		margin:10px 0;
+		font-size:12px;
+}
+/*起草基本信息表格 */
+.table2{
+	width:100%;
+	font-size:12px;
+	padding:5px;
+	_padding:5px 5px 0 5px;
+	*padding:2px 5px 0 5px;
+	line-height:25px;
+	margin-bottom:10px;
+	background-image: url(../images/book_bg.gif);
+	background-repeat: repeat-x;
+	border-top:1px #ccc solid;
+}
+/*tab下查询框  */
+.table3{
+	width:100%;
+	font-size:12px;
+	padding:5px;
+	line-height:25px;
+	margin-bottom:10px;
+	background-image: url(../images/book_bg.gif);
+	background-repeat: repeat-x;
+}
+.table4{
+		width: 98%;
+		line-height:30px;
+		padding-left:10px;
+		margin:10px 0;
+}
+.table5{
+	width:100%;
+	font-size:12px;
+	padding:5px;
+	_padding:5px 5px 0 5px;
+	*padding:2px 5px 0 5px;
+	line-height:25px;
+	margin-bottom:10px;	
+}
+.table6{
+	width:400px;
+	font-size:12px;
+	line-height:30px;
+	padding:5px 10px;
+	background-color:#E9F0FA;
+	border:1px solid #879B99;
+}
+/*table_box包括上下两个DIV，上DIV是table_content_flow，下DIV又包括table_content和talbe_content_message  */
+/*审签履行下方信息框样式   */
+.table_box{
+	width:98%;
+	line-height:30px;
+	margin:5px auto;
+	border:1px solid #CECECE;
+}
+/*审签履行下方信息框流程样式   */
+.table_content_flow{
+	background:#E4E4E4;
+	padding-left:10px;
+	height:25px;
+	line-height:25px;
+	
+}
+/*审签履行下方信息框内容样式   */
+.table_content{
+	margin:0 20px;
+}
+/*审签履行下方信息框部门处理意见 */
+.table_content_message{
+	line-height:25px;
+}
+/*审签履行下方信息框部门处理人时间样式   */
+.table_content_explain{
+	height:25px;
+	line-height:25px;
+}
+/*DateCSS样式*/
+.header1 {font: 12px Arial, Tahoma !important;font-weight: bold !important;font: 11px Arial, Tahoma;font-weight: bold;color: #154BA0;background:#fff;height: 25px;padding-left: 10px;
+}
+.header1 td {padding-left: 10px;}
+.header1 a {color: #154BA0;}
+.header1 input {background:none;vertical-align: middle;height: 16px;}
+.category {font: 12px Arial, Tahoma !important;font: 11px Arial, Tahoma;color: #92A05A;height:20px;background-color: #FFFFD9;}
+.category td {border-bottom: 1px solid #DEDEB8;}
+.expire, .expire a:link, .expire a:visited {color: #999999;}
+.default, .default a:link, .default a:visited {color: #000000;}
+.checked, .checked a:link, .checked a:visited {color: #FF0000;}
+.today, .today a:link, .today a:visited {color: #00BB00;}
+#calendar_year {display: none;line-height: 130%;background: #FFFFFF;position: absolute;z-index: 10;}
+#calendar_year .col {float: left;background: #FFFFFF;margin-left: 1px;border: 1px solid #CC0808;padding: 4px;}
+#calendar_month {display: none;background: #FFFFFF;line-height: 130%;border: 1px solid #CC0808;padding: 4px;position: absolute;z-index: 11;}
+.tableborder {background: white;border: 1px solid #92ADCB;}
+#year,#month{padding-right:10px;}
+/*翻页样式 */
+.page{
+	height:30px;
+	line-height:30px;
+	text-align:right;
+	padding-right:10px;
+	margin-top:5px;
+}
+/*有背景按钮样式  */
+.lineheight{
+	border-top:2px solid #D71820;
+	border-bottom:1px solid #ccc;
+	background-color:#f1f1f1;
+	height:20px;
+	line-height:20px;
+	margin-bottom:5px;
+	padding:5px;
+}
+/*无背景按钮样式  */
+.lineheight2{
+	height:40px;
+	line-height:40px;
+	padding:0 5px;
+}
+/*文字行高样式  */
+.lineheight3{
+	height:20px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+/*模板详细页行高样式  */
+.lineheight4{
+	height:20px;
+	line-height:20px;
+}
+
+/*tab选项卡   */
+@media projection, screen {
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+.ui-tabs-nav, .ui-tabs-panel {
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+	
+}
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.ui-tabs-nav:after {
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 0 0 1px;
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    display: block;
+	font-size:14px;
+    padding: 0 8px;
+    background: url(../images/tab.png) no-repeat;
+}
+.ui-tabs-nav a {
+    margin: 1px 0 0; 
+    padding-left: 0;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; /* IE 6 */    
+    outline: 0; /* Firefox */
+}
+.ui-tabs-nav .ui-tabs-selected a {
+    top: 1px;
+    z-index: 2;
+    margin-top: 0px;
+    color: #fff;
+	text-decoration: none;
+}
+.ui-tabs-nav a span {
+	width: 50px;
+	min-width: 50px;
+	height: 18px;
+	min-height: 18px;
+	padding-top: 6px;
+	padding-right: 0;
+}
+*>.ui-tabs-nav a span {
+    width: auto;
+    height: auto;
+	text-decoration: none;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-bottom: 1px;
+}
+.ui-tabs-nav .ui-tabs-selected a, .ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active {
+    background-position: 100% -150px;
+	text-decoration: none;
+}
+.ui-tabs-nav a, .ui-tabs-nav .ui-tabs-disabled a:hover, .ui-tabs-nav .ui-tabs-disabled a:focus, .ui-tabs-nav .ui-tabs-disabled a:active {
+    background-position: 100% -100px;
+}
+.ui-tabs-nav .ui-tabs-selected a span, .ui-tabs-nav a:hover span, .ui-tabs-nav a:focus span, .ui-tabs-nav a:active span {
+    background-position: 0 -50px;
+}
+.ui-tabs-nav a span, .ui-tabs-nav .ui-tabs-disabled a:hover span, .ui-tabs-nav .ui-tabs-disabled a:focus span, .ui-tabs-nav .ui-tabs-disabled a:active span {
+    background-position: 0 0;
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { 
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active { 
+    cursor: pointer;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-panel {
+    border-top: 2px solid #C13533;
+    padding: 0em;
+    background: #fff; 
+}
+.ui-tabs-panel2 {
+    border-bottom: 2px solid #C13533;
+    padding: 0em;
+    background: #fff; 
+}
+.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(../images/loading.gif) no-repeat 0 50%;
+}
+
+* html .ui-tabs-nav { 
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  {
+    display: inline-block;
+}
+/*履行单合同变更菜单   */
+.enforce_menu {
+font-family: arial, sans-serif; 
+width:100%; 
+margin:0; 
+margin-top:10px;
+}
+.enforce_menu ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+}
+.enforce_menu ul li {
+float:left; 
+position:relative;
+}
+.enforce_menu ul li a, .enforce_menu ul li a:visited {
+display:block; 
+text-align:center; 
+text-decoration:none; 
+width:90px; 
+height:20px; 
+color:#000; 
+background: url(../images/btn_down.gif) no-repeat left center #CCE0F7;
+font-size:12px;
+}
+.enforce_menu ul li ul {
+display: none;
+}
+.enforce_menu ul li:hover a {
+	color:#000;
+	background-color: #CCE0F7;
+	cursor:pointer;
+	margin-bottom:3px;
+}
+.enforce_menu ul li:hover ul {
+display:block; 
+position:absolute; 
+top:23px; 
+left:0; 
+width:90px;
+background:#fff;
+border:1px solid #A7C5E2;
+filter:progid:DXImageTransform.Microsoft.Shadow 
+(Color=#dddddd,Direction=120,strength=5); 
+}
+
+.enforce_menu ul li:hover ul li a {
+display:block; 
+background:#fff; 
+color:#000;
+height:24px;
+line-height:24px;
+}
+.enforce_menu ul li:hover ul li a:hover {
+background:#D71820; 
+color:#fff;
+}
+/*日志收起展开图标 */
+.history{
+padding-right:10px; padding-top:5px;
+}
+/*高级查询默认隐藏*/
+#div1{
+display:none;
+}
+/*底下边线样式  */
+.line{
+  width:100%;
+  border-bottom:1px solid #dedede;
+  margin-bottom:30px;
+}
+/*底下边线样式  */
+.line2{
+  border-bottom:2px solid #CC0000;
+}
+/*底下边线样式  */
+.line3{
+  width:100%;
+  border-bottom:1px solid #dedede;
+  margin-bottom:10px;
+}
+.line4{
+  width:98%;
+	line-height:30px;
+	margin:5px auto;
+  border-bottom:1px dashed #dedede;  
+}
+/*提示框阴影  */
+.out {
+display:block; 
+background:#bbb; 
+border:1px solid #f1f1f1; 
+position:absolute;
+margin:1em 0;
+}
+/*设置外框(背景、边框与定位)*/
+.in2 {
+display:block; 
+background:#777; 
+border:1px solid #999; 
+position:absolute;
+padding:1px;
+margin:1px;
+}
+.in {
+text-align:center; 
+background:#E9F0FA; 
+border:1px solid #ccc; 
+line-height:25px;
+text-align:left;
+position:relative; 
+padding:5px;
+font-weight:normal;
+}/*内框的设定*/
+.ltin {
+left:-2px;
+
+}
+.tpin {
+top:-2px;
+}
+.rtin {
+left:2px;
+}
+
+.dialog_title_bg{
+	width:100%; 
+	clear:both; 
+	margin-top:10px;
+	background:#DDE0E2; 
+	height:25px; 
+	line-height:25px; 
+	color:#D71820;
+	margin-bottom:5px;
+	border:0px}
+.dialog_title_left{ 
+	background:url(../images/block_title_left_bg.gif) repeat-x;
+	padding-left:10px;
+	padding-right:2px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	float:left;
+	text-align:center;
+}
+.dialog_title_right{
+	width:26px;
+	height:25px;
+	float:left;
+	background-image: url(../images/block_title_bg.gif);
+	background-repeat: no-repeat;
+}
+/* 知识管理列表样式*/
+.list{margin: 0px 2px;text-align: left;line-height:25px;}
+.list li{
+	margin:0 0 0 5px;
+	padding-bottom:3px;
+	font-size:12px;
+	background-image: url(../images/dot.gif);
+	background-repeat: no-repeat;
+	border-bottom:1px dashed #dedede;
+}
+.list li a{color:#333333; font-size:12px; line-height:25px; text-decoration:none; margin-left:10px}
+.list li span{float: right;text-align: right; padding-right:8px; color:#999; font-size:12px; line-height:25px}
+.list li a:hover{color: #ff0000; text-decoration:none}
+/* 登陆背景渐变*/
+.login_bg{
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#DCDCDC,endColorStr=#ffffff);
+}
+.text{text-align:center;}
+/*报表样式*/
+.List
+{
+    border-collapse: collapse;
+    color:#000;
+    FONT-SIZE: 12px;
+}
+
+.List th
+{
+    text-align: center;
+    background-color: #E9F0FA;
+    border: 1px #cccccc solid;
+    text-align:center;
+}
+
+.List td
+{
+    padding-left:5px;
+    padding-right:5px;		
+    border-collapse: collapse;
+    border:none;
+    border: 1px solid #ccc;
+    color:#000;
+}
+.List tr.odd{
+		background: #fff;
+	}
+.List tr.even{
+		background: #E9F5FC;
+}
+.List tr:hover,
+.List tr.hover{
+		background: #E9F5FC;
+}
+.Button
+{
+    BORDER: #2C59AA 1px solid;
+    FONT-SIZE: 12px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+    CURSOR: hand;
+    COLOR: black;
+    padding:1px 10px;
+    *padding:0 5px;
+    _padding:0 5px;
+    line-height:20px;
+    height:20px;
+    margin-right:10px;
+}
+
+.PromptCaption
+{
+    width: 70px;
+}
+
+.Prompt
+{
+    width: 90%;
+}
+
+.Prompt span
+{
+    width: 90px;
+}
+
+.Prompt select
+{
+    width: 70%;
+}
+
+.Prompt input
+{
+    width: 70%;
+}
+
+.Paging
+{
+    height:30px;
+    line-height:30px;
+    text-align:right;
+    padding-right:10px;
+    margin-top:5px;
+}
+/************************* Start Bas Style *************************/
+/*BasReportList*/
+.basrl {}
+.basrl table {border-collapse: collapse; line-height:25px; color:000; FONT-SIZE: 12px;}
+.basrl th {text-align: center; background-color: #E9F0FA; border: 1px #cccccc solid; text-align:center;}
+.basrl td {padding-left:5px; padding-right:5px; border-collapse: collapse; border:none; border: 1px solid #ccc; color:#000;}
+
+/*BasButton*/
+.basbtn {BORDER: #2C59AA 1px solid; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); CURSOR: hand; COLOR: black; padding:1px 10px; *padding:0 5px; _padding:0 5px; line-height:20px; height:20px; margin-right:10px;}
+
+/*BasPromptPanel*/
+.baspp table {width:100%; font-size:12px; padding:5px; _padding:5px 5px 0 5px; *padding:2px 5px 0 5px; margin-bottom:10px; background-image: url(../images/book_bg.gif); background-repeat: repeat-x; border-top:1px #ccc solid;}
+.baspp button {BORDER: #2C59AA 1px solid; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); CURSOR: hand; COLOR: black; padding:1px 10px; *padding:0 5px; _padding:0 5px; line-height:20px; height:20px; margin-right:10px;}
+.baspp span {width: 80px;}
+.baspp input {width: 90%;}
+.baspp select {width: 90%;}
+.basppc {width: 6%;}
+.basppac {width: 25%;}
+
+/*BasPager*/
+.baspg {text-align:right; padding-right:10px; margin-top:5px; line-height:12px;}
+.baspg input {width:50px;}
+/************************* End Bas Style *************************/
+
+.ideaDiv{
+	width:100%;
+	vertical-align: top;
+	height: auto;
+	word-break: break-all;
+}
+.vlidea {
+	align:left;
+	width:100%;
+	padding:1px  1px 1px 1px;
+	vertical-align: top;
+	height: auto;
+	word-break: break-all;
+}
+
+.vlsign {
+	max-width:550px;
+	width: expression(this.parentElement.clientWidth >   550 ?   "550px" :   "auto");
+	text-align: rigth;
+	padding:1px  1px 1px 1px;
+	height: auto;
+	word-break: break-all;
+	margin-bottom: 10px;
+}
+
+/*领导页面新增样式 */
+.btn_agree{border:none; background:url(../images/btn_agree.gif) no-repeat; width:48px; height:19px; margin-right:10px}
+.btn_disagree{border:none; background:url(../images/btn_disagree.gif) no-repeat;width:57px; height:19px;}
+.table_content2{margin-left:20px;}
+.table_content_flow2{
+background:#E4E4E4;
+border-right:1px solid #CECECE;
+padding-left:10px;
+line-height:25px; 
+}
+
+/*定义按钮图标 */
+.btn_div2{
+	margin: 0;
+	height: 46px;
+	clear: both;
+	background: #F7F5F1;
+	padding: 1px 0 2px;
+}
+/*图标按钮*/
+.toolbar{
+	margin:0; padding:0;
+}
+.toolbar ul{
+	list-style:none;
+	margin:0 ; padding:0;
+	z-index:9999;
+}
+.toolbar li{
+	display:block;
+	float:left;
+	border-left:1px solid #fff;
+	border-right:1px solid #F1E9E2;
+	height: 45px;
+}
+.toolbar li a{
+	margin:0 3px;
+	padding:0 12px;
+	display:block;
+	float:left;
+	color:#0A2A43;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:normal;
+	line-height:24px; _line-height:24px;	
+	border:1px solid #F7F5F1;
+}
+.toolbar li a:hover{
+	color:#ff0000;
+	text-decoration:none;
+	background: url(../images/btn/btnbg.gif) repeat-x;
+	border:1px solid #FBE1B0;
+}
+.toolbar li div{
+	color:#0A2A43;
+	font-size:12px;
+	text-align:center;
+	margin:0 auto;
+}
+.toolbar li img{
+   border:none;
+}

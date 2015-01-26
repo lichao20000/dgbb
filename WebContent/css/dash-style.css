@@ -1,0 +1,144 @@
+/* CSS Document*/
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-family: "Microsoft YaHei";
+}
+#body_div {
+	min-width: 980px;
+	width: expression_r( document.body.clientWidth < 980 ? "980px": "auto" );
+	padding-left: 1px;
+	padding-right: 1px;
+}
+#dhl {
+	background-image: url(../images/u11_original.jpg);
+	width: 100%;
+	font-size: 14px;
+}
+#dbt {
+	background-image: url(../images/u11_original.jpg);
+	width: 100%;
+}
+#xbt {
+	background-image: url(../images/u5_original.png);
+	height: 29px;
+	widh: 100%;
+	background-repeat: no-repeat;
+}
+#redlg {
+	background-color: #C11403;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height:3px;
+}
+.zblh {
+	width: 100%;
+	height: 251px;
+}
+.padr {
+	padding-right: 30px;
+}
+.tip_title {
+	color: #FFF;
+	padding-left: 1%;
+	height: 20px;
+	padding-top: 5px;
+	vertical-align: left;
+	font: bold;
+	font-size: 16px;
+}
+.condition {
+	margin-left: 3%;
+	margin-top: 1%;
+}
+#div_table {
+	}
+.ctable {
+	width: 99.9%;
+	margin: 0px auto;
+}
+.ctable td {
+	border: 0px  #FFFFFF;
+	margin-right:5px;
+	width: 50%;
+	background-color: #F8F8F8;
+}
+.clien_title {
+	height: 20px;
+	padding-top: 5px;
+	vertical-align: middle;
+	color: #FFF;
+	font: bold;
+	padding-left: 5px;
+	font-size: 18px
+}
+.chartsTitle {
+	text-align: left;
+	width: 100%;
+	padding-top: 1%;
+	padding-left: 5px;
+	margin-top: -5px;
+	font-size: 14px;
+	color:#666666;
+}
+.p_title {
+	text-align: center;
+	font-size: 10px;
+}
+.p_value{
+	text-align: center;
+	font-size: 24px;
+	font: bold;
+	margin-top:5px;
+}
+.div_left {
+	display: block;
+	width: 40%;
+	height: 100%;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	float: left;
+	display: inline;
+}
+.div_right {
+	display: block;
+	width: 60%;
+	height: 100%;
+	vertical-align: bottom;
+	float: right;
+	display: inline;
+}
+.sdbj {
+	text-align: left;
+	margin-left: 6%;
+	margin-top: 5px;
+}
+.sdbj .alertButton {
+	margin-left: 90px;
+}
+.fbpz {
+	text-align: right;
+	margin-top: 0px;
+}
+#chartContainer1,#chartContainer3,#chartContainer5,#chartContainer7 {
+	padding-left: 8px;
+	text-align: center;
+	width: 200px;
+	height: 180px;
+	background: url(../images/loaderc.gif) no-repeat center;
+}
+#chartContainer2,#chartContainer4,#chartContainer6,#chartContainer8 {
+	text-align: right;
+	min-width: 260px;
+	width: expression_r( document.body.clientWidth < 980 ? "260px": "auto" );
+	height: 200px;
+	padding-left: 15px;
+	padding-right: 5px;
+	padding-top:10px;
+	background: url(../images/loaderc.gif) no-repeat center;
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "微软雅黑"、Airal;
+	font-size: 12px;
+	color: #333333;
+	margin: 5px;
+	line-height: 14px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+td{	
+	font-family: "微软雅黑"、Airal;
+	font-size: 12px;
+	color: #333333;
+
+	line-height: 14px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+a:visited {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+a:hover {
+	text-decoration: none;
+	color: #d7191f;
+}
+a:active {
+	text-decoration: none;
+	color: #3f3f3f;
+}
+
+/* ============== 控件 =============== */
+/* ========== 按钮 =========== */
+.bluebutton {border:1px solid #2e7995;border-bottom:2px solid #2e7995;border-radius: 5px;background:url(../images/df/bluebutton1.gif) repeat-x;   height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;padding-left:18px;padding-right:18px;}
+.redbutton {border:1px solid #9C1215;border-bottom:2px solid #9C1215;border-radius: 5px;background:url(../images/df/redbutton1.gif) repeat-x;  width:82px; height:26px; cursor:pointer; font-size:12px; color:#ffffff;font-family: "宋体";text-shadow:2px 2px 1px #000000;letter-spacing:10px;padding-left:18px;}
+.graybutton {border:1px solid #999999;border-radius: 5px;background:url(../images/df/graybutton1.gif) repeat-x;  width:82px; height:26px; cursor:pointer; font-size:12px; color:#333333;font-family: "宋体";text-shadow:2px 2px 1px #ffffff;letter-spacing:10px;padding-left:18px;}
+
+/* ======== 下拉输入框 ========= */
+.sel_wrap {
+	width: 200px;height: 26px;border: 1px solid #ccc;cursor: pointer;position: relative;	
+	background:url(../images/df/select.png) no-repeat right center;font-family: "宋体";	
+}
+.sel_wrap span {line-height: 30px;padding-left: 10px;font-size: 14px;z-index: 2;color:#3f3f3f ;	}
+.sel_wrap .inputselect {
+	width: 201px;height: 28px;	font-size: 12px; color: #3f3f3f;z-index: 4;
+	position: absolute;margin: 0;padding: 0;opacity: 0;cursor: pointer;top: 0;left: 0;	
+}
+
+.address_home{height: 30px;background: url(../images/df/address_home.png) repeat-x;border: 1px solid #bbb;display: block-inline;}
+.address_first {height: 30px;width:124px;line-height: 30px;float: left;margin-left: 0px;background: url(../images/df/address_first.png) no-repeat;font-size: 14px;font-weight: bolder;color: #333333;text-align:center;}
+.address_other {height: 30px;width:124px;line-height: 30px;float: left;margin-left:-15px;background: url(../images/df/address_other.png) no-repeat;font-size: 14px;font-weight: bolder;color: #333333;text-align:center;}
+.address_now {height: 30px;width:124px;line-height: 30px;float: left;font-size: 14px;font-weight: bolder;color: #d7191f;padding-left:10px;}
+
+/* ======== 输入框 ========= */
+.testfont {	font-family: "宋体";	font-size: 12px; color: #333333;}
+.inputtest { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+.inputfile { font-family: "宋体";	font-size: 12px; color: #333333; height: 17px;	margin-left: 10px;}
+.mustfont { font-family: "宋体";	font-size: 12px; color: #D7191F; margin-right: 10px;text-align:right;}
+.inputnumber { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+.inputphone { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+.inputemail { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+.inputpassword { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+.inputnotnull { height: 17px; font-family: "宋体"; font-size: 12px; color: #333333;	margin-left: 10px;}
+
+/* ======== 文本域 ========= */
+.inputtestarea { padding:10px;color:#333333;font-family: "宋体";	font-size: 12px; margin-left: 10px;}
+
+/* ======== 单选框 ========= */
+
+/* ======== 复选框 ========= */
+/* === 显示/隐藏=== */
+.firerift-style { display: block; width: 68px; height: 28px; background:url(../images/df/check-circle.png) no-repeat; cursor: pointer;}
+
+/* === 圆型=== */
+.firerift-style-o {	display: block;	width: 16px; height: 16px; background:url(../images/df/checkbox-o.png) no-repeat; cursor: pointer;}
+
+/* === 方型=== */
+.firerift-style-f { display: block; width: 16px; height: 16px; background:url(../images/df/checkbox-f.png) no-repeat; cursor: pointer;}
+.on { background-position: 0% 0%;}
+.off {background-position: 100% 0%;}	
+.hidden { display: none;}
+
+/* ========== 色块 =========== */
+.colorspan {float:left;width:12px;height:12px;background:red;}
+
+/* ========== 表格 =========== */
+.dftable table td { border:1px solid #aaa;  height:30px; line-height:30px;}
+.dftd1 { width:120px;text-align: center; font-weight: bolder; valign: value;}
+.dftd2 { padding-left: 3px;	text-align: left;}
+.dftable table { width:726px;border-collapse:collapse;padding: 0px;  font-family: "宋体";	 color: #333333;}
+
+.dftable_ud { display:inline; float: right;	margin-right:4px;height: 100%;}
+.dftable_ud table {	display:inline;}
+.dftable_ud table td{ border:0px; width:7px; height:4px;}
+.dftable_up { background: url(../images/df/tableUp.png) no-repeat;	cursor:pointer;}
+.dftable_down { background: url(../images/df/tableDown.png) no-repeat;	cursor:pointer;}
+
+/* ========== 列表 =========== */
+.table {padding: 0px;font-family: "微软雅黑";border-collapse:collapse; font-size:12px; font-family:"微软雅黑";}
+.table th {line-height: 30px;background: url(../images/df/table_th.png) repeat-x;font-size: 14px;color: #3f3f3f;border-left: 1px solid #bbbbbb;}
+.table td {line-height: 30px;border: 1px solid #eeeeee;}
+.table td a {color:#3f3f3f;}
+.table td a:hover{color:#d7191f;}
+.td_left {text-align: left;padding-left: 6px;}
+.td_cen {text-align: center;}
+
+/* ========== 翻页 =========== */
+.Page { background-color:#f4f4f4; height:35px; width:683px; margin:0px 0px 0px 0px; font-size:12px; font-family: "微软雅黑"; }
+.Page_con {width:580px;padding-top:9px;height: 25px;margin: 0 auto;}
+.Page_conmsg {color: #3f3f3f;float:left;}
+.Page_conmsg font {color:#d7191f;padding: 0 3px;font-size: 12px;}
+.Page_digg { float:left; padding: 0 15px;}
+.Page_digg A {COLOR: #3f3f3f;margin: 0 10px;}
+.Page_digg A:hover {COLOR: #d7191f;}
+.Page_digg A.disabled {COLOR: #a8a8b7;margin: 0 10px;}
+.Page_right {float: left;width: 110px;}
+.Page_jump {COLOR: #3f3f3f;height: 20px;float:left;line-height: 20px;margin-top:-2px; _margin-top:-1px;}
+.Page_input {width: 30px;height:13px;text-align: center;border: 1px solid #bbbbbb;}
+.Page_btn {float: right;height: 16px;width: 16px;background:url(../images/df/GO.png) no-repeat; cursor:pointer;}
+
+ /* ========== 折叠菜单 =========== */
+.parentWarp{ height:auto; overflow:hidden; margin:26px 0px 0px 30px; position:relative;}
+.parentMenu{ height:16px; line-height:16px; background:url(../images/df/open.png) no-repeat; font-size:14px; font-weight:bolder; padding-left:20px; cursor:pointer;}
+.parentMenuOpen{ height:16px; line-height:16px; background:url(../images/df/close.png) no-repeat; font-size:14px; font-weight:bolder; padding-left:20px; cursor:pointer;}
+.parentWarp ul,li{ list-style:none;padding: 0px;}
+.childMenu{ display:block; font-size:14px;}
+.childMenu li{ height:30px; line-height:30px;  border-left:1px dotted #bbb; margin-left:5px; background:url(../images/icon/17.png) left no-repeat; padding-left:36px;}
+
+
+/* ========== 表单操作项 =========== */
+.right-content01 { background-color: #f7f8fa; height: 33px; width: 683px; line-height:33px;}
+
+ /* ========== 收放条 =========== */
+.function_line_hiddenButton{ width:9px; height:91px; position:relative; margin-top:265px; background:url(../images/df/function_hiddenButton.png) no-repeat; cursor:pointer;}
+.function_line_showButton{ width:9px; height:91px; position:relative; margin-top:265px; background:url(../images/df/function_showButton.png) no-repeat; cursor:pointer;}
+.function_line{ width:8px; height:620px; background:url(../images/left_bg.png) right top repeat-y; border:1px solid #bbb; }
+
+ /* ========== 加载状态 =========== */
+ .loading{ background: url(../images/df/turn.gif) no-repeat; width:16px; height: 16px;}
+ 
+ /* ========== 当前位置 =========== */
+.address_home{height: 30px;background: url(../images/df/address_home.png) repeat-x;border: 1px solid #bbb;display: block-inline;}
+.address_first {height: 30px;width:124px;line-height: 30px;float: left;margin-left: 0px;background: url(../images/df/address_first.png) no-repeat;font-size: 14px;font-weight: bolder;color: #333333;text-align:center;}
+.address_other {height: 30px;width:124px;line-height: 30px;float: left;margin-left:-15px;background: url(../images/df/address_other.png) no-repeat;font-size: 14px;font-weight: bolder;color: #333333;text-align:center;}
+.address_now {height: 30px;width:124px;line-height: 30px;float: left;font-size: 14px;font-weight: bolder;color: #d7191f;padding-left:10px;}
+
+/* ========== 进度条 =========== */
+.allBox{ width:170px; margin-top:5px; height:10px; border:#CCCCCC 1px solid; display:inline; overflow:hidden; float:left; position:relative; text-align:center;}
+.inBox{ height:6px;	background-color:#DB2E34; border:#DB2E34 1px solid;	position:absolute; top:1px;	left:1px; z-index:1;}
+.percent{ font-family:Arial; font-size:12px; color:#bdbdbd;	position:relative; left:5px; top:4px;}
+
+/* ============== 容器 =============== */
+/* ========== 弹出框 =========== */
+.tanchu{width:388px; margin:0px auto; margin-top:5%;}
+.tanchudiv_alpha{ width:388px; height:257px;*height:277px; background:#d3d3d3; filter:alpha(opacity=30);opacity:0.3;position: absolute; }
+.tanchudiv{border: 1px solid #bbbbbb;width: 374px;height: 243px;*height: 263px;background: url(../images/df/tanchu_top_t.jpg) repeat-x;	font-size: 12px;position:relative;left: 6px;top: 6px;}
+.tanchudiv span{ color:#3f3f3f; font-family:"微软雅黑"; font-size:14px; background:url(../images/df/tanchu_top_pic.png) 10px 10px no-repeat; padding-left:37px; line-height:35px; font-weight:bold;text-shadow:1px 1px 1px #ffffff; float:left;}
+.tanchudiv i{ background:url(../images/df/closeX.png) no-repeat; width:23px; height:13px; float:right; margin-top:11px; cursor:pointer;}
+.tanchudiv_nr{ clear:both; padding:20px; background:#FFF;}
+.tanchudiv_tit{ color:#d7191f; font-size:14px; font-weight:bold;}
+.tanchudiv_wz{ color:#3f3f3f; height:95px; margin-top:30px;}
+.tanchudiv_inp{width:82px;margin:0 auto;}
+.tanchu_inputcla{ background:url(../images/df/redbutton.png) no-repeat; border:0px; width:82px; height:26px; cursor:pointer; font-size:14px; color:#ffffff;font-family: "微软雅黑";text-shadow:2px 2px 1px #000000;letter-spacing:10px;}
+
+/* ========== 页签 =========== */
+.dfpagecard {border:1px;margin:0px;width:auto;}
+.dfpcttable {width: auto;margin-bottom:-5px;font-family: "微软雅黑";font-size: 12px; cursor: pointer;}
+.sec2 {   border:1px solid #9c1215; color:#ffffff;}
+.sec1 {   border:1px solid #bbbbbb; color:#333333;}
+.sec1, .sec2 {letter-spacing:1px;float:left;font-weight:bold;height: 30px;width:auto;line-height:30px;padding-left:10px;padding-right:10px;}
+.main_tab {margin:0px;margin-top:-2px;}
+.main_tab_td {border:1px solid #9c1215; width:auto;}
+
+
+ 
+ /* ========== 功能块 =========== */
+.function_conDiv{ width:212px; height:auto; overflow:hidden; padding-bottom:10px; border:1px solid #bbb; margin:10px 0px 0px 10px;}
+.function_conDiv b{ width:150px; height:35px; line-height:35px; color:#7e7e7e; font-size:14px; border-bottom:1px dotted #bbb; display:block; margin:0px auto; padding-left:30px;}
+.function_conDiv font{ color:#d7191f;}
+.function_contitle{ height:30px; line-height:30px; padding-left:36px; font-size:14px; font-weight:bolder; background:url(../images/df/leftMenuBg.png) repeat-x; border-bottom:1px solid #bbb; position:relative;}
+.function_contitle span{ width:17px; height:17px; display:block; position:absolute; top:7px; left:10px;}
+
+ /* ========== 功能块 =========== */
+.calendar {	width: 228px; height: 320px; margin: 0px auto; margin-top: 0; border: 3px solid #d3d3dF;}
+.calendardiv_alpha { width: 228px; height: 319px; *height: 316px; background: #d3d3d3; filter: alpha(opacity =     30);	opacity: 0.3; position: absolute;}
+.calendardiv { border: 1px solid #bbbbbb; width: 214px; height: 299px; *height: 300px; background: url(../images/df/tanchu_top_t.jpg) repeat-x; font-size: 12px; position: relative; left: 6px; top: 6px;}
+.calendardivspan { color: #3f3f3f; font-family: "微软雅黑"; font-size: 14px; background: url(../images/df/clock.png) 10px 10px no-repeat;	padding-left: 37px; line-height: 35px; font-weight: bold; text-shadow: 1px 1px 1px #ffffff; float: left;}
+.calendardiv i { background: url(../images/df/delete01.png) no-repeat;	width: 23px; height: 13px; float: right; margin-top: 11px; cursor: pointer;z-index: 1000;}
+.calendardiv_nr { clear: both; padding: 10px; background: #FFF; z-index: 1000;}
+.calenderiframe { margin: 0; padding: 0; position: absolute; z-index: 2000; width: expression(this.previousSibling.offsetWidth); height: expression(this.previousSibling.offsetHeight); left: expression(this.previousSibling.offsetLeft); top: expression(this.previousSibling.offsetTop); display: expression(this.previousSibling.style.display);}
+.calendarPanelp { position: absolute; display: none; z-index: 9999; background-color: #FFFFFF; border: 1px solid #CCCCCC; width: 175px;	font-size: 12px;}
+.calendarFormp { margin: 2px;background:#d3d3d3;}
+.calendarTitleDiv {	border: 1px solid #bbbbbb; background: url(../images/df/cal_title.jpg) repeat-x; font-size: 12px;}
+.caltable td { border:1px solid #CCCCCC;}
+.caltable {	border-collapse:collapse;}
+
+.calendarTimeUp { font-size:12px;width:14px;height:14px; padding:0px;margin:0px; border:0px;background:url(../images/df/calendarTimeUp.png) no-repeat; text-align:center;}
+.calendarTimeDown { font-size:12px;width:14px;height:14px; padding:0px;margin:0px; border:0px;background:url(../images/df/calendarTimeDown.png) no-repeat; text-align:center;}
+.calendarPrevMonth {border: 1px solid #bcc0be;background:url(../images/df/prevMonth.png);width:16px;height:20px; cursor: pointer;}
+.calendarNextMonth {border: 1px solid #bcc0be;background:url(../images/df/nextMonth.png);width:16px;height:20px; cursor: pointer;}
+.calendarPrevYear {border: 1px solid #bcc0be;background:url(../images/df/prevYear.png);width:16px;height:20px; cursor: pointer;}
+.calendarNextYear {border: 1px solid #bcc0be;background:url(../images/df/nextYear.png);width:16px;height:20px; cursor: pointer;}
+.calendarRedButton {border: 0px; background:url(../images/df/calendarRedButton.png);width:40px;height:20px;font-size:12px;color:#ffffff;cursor:pointer;}
+.calendarGrayButton {border: 0px; background:url(../images/df/calendarGrayButton.png);width:40px;height:20px;font-size:12px;color:#333333;cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

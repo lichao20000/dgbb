@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body {
+	font-family: "Microsoft YaHei";
+}
+</style>
+</head>
+
+<body style="overflow: visible;">
+<form id="form1" name="form1" method="post" action="">
+<p style="margin-left: 20px;">请选择预警方式:</p>
+<p style="margin-left: 40px;"><input type="checkbox" checked="checked"  id="email"/>邮件预警 &nbsp; <input type="checkbox" checked="checked" id="SMS"/>短信预警</p>
+<p style="margin-left: 20px;"><button style="margin-left: 20px;" onclick="CloseWindow('ok')">确认预警</button><button style="margin-left: 20px;" onclick="CloseWindow('cancel')">放弃预警</button> </p>
+</form>
+<script type="text/javascript">
+function CloseWindow(action) {
+	if(action=="ok"){
+		var email = document.getElementById("email").checked;
+		var SMS = document.getElementById("SMS").checked;
+		var data = {email:email,SMS:SMS};
+	}
+    if (window.CloseOwnerWindow) return window.CloseOwnerWindow(data);
+    else window.close();            
+}
+</script>
+</body>
+</html>

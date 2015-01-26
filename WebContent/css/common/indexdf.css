@@ -1,0 +1,28 @@
+/* ============== 容器 =============== */
+/* ========== 弹出框 =========== */
+.tanchu{width:388px; margin:0px auto; margin-top:5%;}
+.tanchudiv_alpha{ width:388px; height:257px;*height:277px; background:#d3d3d3; filter:alpha(opacity=30);opacity:0.3;position: absolute; }
+.tanchudiv{border: 1px solid #bbbbbb;width: 374px;height: 243px;*height: 263px;background: url(../../resources/images/df/tanchu_top_t.jpg) repeat-x;	font-size: 12px;position:relative;left: 6px;top: 6px;}
+.tanchudiv span{ color:#3f3f3f; font-family:"微软雅黑"; font-size:14px; background:url(../../resources/images/df/tanchu_top_pic.png) 10px 10px no-repeat; padding-left:37px; line-height:35px; font-weight:bold;text-shadow:1px 1px 1px #ffffff; float:left;}
+.tanchudiv i{ background:url(../../resources/images/df/closeX.png) no-repeat; width:23px; height:13px; float:right; margin-top:11px; cursor:pointer;}
+.tanchudiv_nr{ clear:both; padding:20px; background:#FFF;}
+.tanchudiv_tit{ color:#d7191f; font-size:14px; font-weight:bold;}
+.tanchudiv_wz{ color:#3f3f3f; height:95px; margin-top:30px;}
+.tanchudiv_inp{width:82px;margin:0 auto;}
+.tanchu_inputcla{ background:url(../../resources/images/df/redbutton.png) no-repeat; border:0px; width:82px; height:26px; cursor:pointer; font-size:14px; color:#ffffff;font-family: "微软雅黑";text-shadow:2px 2px 1px #000000;letter-spacing:10px;}
+
+.win_border{background:#d3d3d3;padding:7px; }
+.win_header{border: 1px solid #bbbbbb;background: url(../../resources/images/df/win_header_bg.jpg) repeat-x;font-size: 12px;}
+.win_name{line-height:34px;margin-left:10px;color:#3f3f3f; font-family:"微软雅黑"; font-size:14px; font-weight:700;}
+.win_cancel{background:url(../../resources/images/df/closeX.png) no-repeat; cursor:pointer;float:right;margin-top:11px;*margin-top:-23px;margin-right:14px;}
+.win_body{border: 1px solid #bbbbbb;border-top:0px;background:#fff;}
+
+.win_body_title{color:#d7191f; font-size:14px; font-weight:bold;}
+.win_name_alert{background:url(../../resources/images/df/win_alert_ico.png) no-repeat; line-height:34px;margin-left:10px;padding-left:27px; color:#3f3f3f; font-family:"微软雅黑"; font-size:14px;}
+.win_body_alert{border: 1px solid #bbbbbb;border-top:0px;background:#fff;padding:20px;padding-bottom:10px;}
+
+.win_name_static{line-height:34px;margin-left:10px;color:#3f3f3f; font-family:"微软雅黑"; font-size:14px;font-weight:700; }
+.upload_tit{ color:#d7191f; font-size:14px; font-weight:bold;}
+.upload_wz{ color:#3f3f3f; font-size:12px;margin-top:20px;margin-left:30px;}
+
+.lightbox{z-index:-1;padding:7px;background-color:#6e6e6e;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6; position:absolute; top:0px; left:0px;}
